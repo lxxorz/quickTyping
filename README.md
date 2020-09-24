@@ -15,11 +15,18 @@ g++ *.cpp -o main_v2 -lmingw32 -lSDL2main -lSDL2  -lSDL2_ttf -lSDL2_image
 
 ## Usage
 
-词库放入本地目录`words.txt`中， 会**自动随机**选择单词进行联系
+词库请放入本地目录`words.txt`中， 会**自动随机**选择单词进行联系，默认CET-4 词库
   
 * words.txt
-![截图](word.png)
+![截图](https://cdn.jsdelivr.net/gh/lxxorz/pics/word.png)
 
 
 * 使用截图
-![截图](./shoot.png)
+![截图](https://cdn.jsdelivr.net/gh/lxxorz/pics/shoot.png)
+
+
+## problem
+
+* 如果提示**缺少xxxx.dll**则可能缺少`SDL2.0`lib需去官网下载[https://www.libsdl.org/](https://www.libsdl.org/)
+* 缺少ttf lib 请去[https://www.libsdl.org/projects/SDL_ttf/](https://www.libsdl.org/projects/SDL_ttf/)下载
+* 缺少image lib 请去[https://www.libsdl.org/projects/SDL_image/](https://www.libsdl.org/projects/SDL_image/)
