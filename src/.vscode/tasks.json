@@ -1,0 +1,31 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "D:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-g", // 生成调试信息
+                "*.cpp",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-lmingw32", 
+                "-lSDL2main", 
+                "-lSDL2", 
+                "-lSDL2_ttf",
+                "-lSDL2_image",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
